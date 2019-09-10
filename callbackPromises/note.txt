@@ -1,0 +1,2 @@
+1. Need to check reduce functions
+2. Map functions
