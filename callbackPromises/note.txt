@@ -1,2 +1,8 @@
 1. Need to check reduce functions
 2. Map functions
+
+# SHARED LINKS TO JS TUTORIALS
+A. https://courses.edx.org/courses/course-v1:W3Cx+JS.0x+1T2019/course/
+
+# GITLAB
+https://gitlab.com/johandurancerdas/g...
