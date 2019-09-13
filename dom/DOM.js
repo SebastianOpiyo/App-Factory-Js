@@ -32,3 +32,12 @@ div.addEventListener('mousemove', function(event) {
 })
 
 // What is a call back function.
+
+// getElementByTagName("tag")  // will always return a list.
+const Ingredient = function(amount, unit, name) {
+    let ingredientAmount = amount * humus();
+}
+
+const humus = function(factor) {
+    return factor
+}

@@ -1,0 +1,6 @@
+// What are spread operatators
+// function(arg1, ...spread) {
+    // do something.
+}
+
+// Spread operators help us to pass more than one argument in func params.
