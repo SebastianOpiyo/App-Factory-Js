@@ -3,6 +3,7 @@
 
 // node.org
 
+
 function hello() {
     // logic goes here
     console.log("mirst function", " hello world ")
@@ -51,6 +52,8 @@ function function_x() {
 
 function_x()
 
+// ARROW FUNCTIONS
+// Arrow Functions i.e (...args)=> {// do stuff  //If the arg is one we can do without brackets.}
 let function_x_china = (country)=> {
     // logc here
     console.log("function_x_china: im also a function ", "made in ", country);
@@ -71,15 +74,19 @@ let multiplier = (num_1, num_2) => {
 
 
 
+// MAP FUNCTIONS.
+// Work well with lists.
+// map function creates a new array with the results of calling a provided function
+// every element in the calling array.
+var array1 = [1,2,3,4,56];
+const map1 = array1.map(x => x*2); // basically loops over every element in the list and multiplies by 2
+
+console.log(map1);
+
 // recommendations
 // 1. let function names convey an apparent meaning
 // 2. use comments to convey what a function is meant to do
 // 3. be consistent with names you give
-
-
-
-
-
 
 
 // control structures
