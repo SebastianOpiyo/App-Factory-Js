@@ -1,0 +1,22 @@
+/* The 3 layers of the Web. */
+1. Html - Content
+2. CSS - Presentation
+3. JS - Behavior
+
+/* Objectives. */
+1. Document Access - Document Object Model(DOM)
+2. Events
+3. Animation
+4. Form Enhancements
+5. Errors and Debugging
+6. Ajax
+7. Looking forward(what next after learning JS)
+8. The core JS Library.
+
+/* Collection of Libraries. */
+1. Prototype --> http://www.prototypejs.org/
+2. script.aculo.us --> http://script.aculo.us
+3. Yahoo! User Interfaces Library --> http://developer.yahoo.com/yui/
+4. Dojo --> http://dojotoolkit.org
+5. jQuery --> http://jquery.com/
+6. MooTools --> http://mootools.net

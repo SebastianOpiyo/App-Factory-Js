@@ -1,0 +1,75 @@
+# A program
+--> Is made of statement
+--> as a book is to sentences
+
+# Statement in JS
+* Can be separated by lines i.e
+stamenent0
+statement1
+
+* Can be separated by commas i.e
+statement0; statement1;
+
+* A good practice
+statement0;
+statement1;
+
+# Comments
+--> can be done // single line.
+--> can be done /* stuff here for block comments*/
+
+# Variable
+--> giving a piece of data a name so that we can refer to it later on in the program just by name. i.e
+var chameleon; // we declare
+chameleon = "blue"; // we assign a value
+
+--> variable names can contain letters and numbers, apart from the '$' and '_'
+--> var are case sensitive
+--> strictly typed vs loosely typed variables.
+
+## Variable and Data types
+--> In JS there are:
+*Booleans
+*Strings
+*Objects
+* Lists/Arrays
+*Numbers
+
+## 1. Numbers
+var whole = 3 // int
+var decimal = 3.14 //float or floating point numbers
+
+--> With numbers come 'Operators'
+e.g +*/-
+--> If you combine integers and float operations, the result wil always be a floating
+// Shorthand operation methods
+var age = age + 1
+age += 1
+age ++ // as long as it is an increament of 1
+
+## Strings
+var single = 'just a single quote';
+var double = "Just a double quote";
+
+--> Escaping
+var thisEscaping = 'We escape using the \'Backslash\' always.
+
+--> Booleans
+can be either true or false
+var lying = false;
+var truthy = true;
+
+## Arrays
+--> Number, strings and Booleans store individual data
+--> Arrays store a group of different peices of Data
+var rack = [] // This is empty, i.e has no elements
+rack[0] // referencing the 1st index in the list
+
+--> Arrays within an array // multi-dimensional arrays.
+--> finding out the number of elements in an arrays // We use length
+rack.length
+rack.length -1 // gives us the last element index value
+
+## Associative Arrays. (Dictionaries)
+var postcodes = []
+postcodes["Armadale"] = 3123  // the key is in string form. The value can be anything.
