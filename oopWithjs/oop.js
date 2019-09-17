@@ -30,3 +30,4 @@ console.log(person1.name);
 console.log(person1.greeting());
 
 
+// We can have a complicated classe with several objects and lists.
