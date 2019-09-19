@@ -1,0 +1,190 @@
+# What is JQUERY
+- Is an efficient and fast javascript libraby. 
+- Write less and do more.
+
+# What jquery Does.
+* Simplifies JS
+* Event Handling
+* Lightweight
+* Animations
+
+// To begin I have installed jquery via npm.
+
+// JQUERY SELECTORS-->  "$()" function.
+>> tag name selectors 
+>> ID selectors 
+>> Class Selectors 
+>> Pseudo-classes Selectors 
+>> Selectors based on relationships
+>> Attribute Selectors 
+>> Multiple Selectors 
+
+NOTE: $() usually takes a single arg. i.e document. 
+     - $ object is like an array, which contains zero or more indexes. It also contains objects like: Length, Context, Selectors
+
+//JQUERY EFFECTS
+
+// JQUERY HTML
+
+// JQUERY TRAVERSING
+
+// JQUERY AJAX
+
+// 1.
+//console.log($);
+
+// console.log($ == jQuery); returns 'true';
+
+// 2.
+// jquery function
+// ~~~~~~~~~~~~~~~~~~~~
+
+// console.log('I ran before the document was ready!')
+
+// $(document).ready(function() {
+//     console.log('This document is ready!')
+// })
+
+// console.log('I ran after the document was ready!')
+
+// A shorter method to the above method.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// $(function(){
+//     // jQuery methods go here...
+//     console.log("Yey! within the shortest method of jquery!")
+  
+//   });
+
+// 3.
+// Manipulating the DOM
+// ~~~~~~~~~~~~~~~~~~~~
+
+
+// $(document).ready(function() {
+//     $('#enterText').text("Hello jQuery World!"); // here we add text
+//     $('p').css('background-color', '#ccffff'); // here we use the .css property
+//     // we can chain this commands. 
+// })
+
+//4. We can do custom functions or plugin NOTE: that is beyond the scope of this tut.
+
+
+//5.  Attribute selectors
+//~~~~~~~~~~~~~~~~~~~~~
+
+// $(document).ready(function() {
+//     $("a[target=_blank]").css('color', 'green'); // we use other attributes
+//     $('p').css('background-color', '#ccffff'); // here we use the .css property
+//     // we can chain this commands. 
+// })
+
+//We can select everything but this is a bad practice.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// $(document).ready(function() {
+//     $('*').css('background-color', '#ccffff'); 
+// })
+
+// A robust list of jquery selectors here.
+
+
+//6. JQUERY Events methods
+//~~~~~~~~~~~~~~~~~~~~~~~~
+
+// $(document).ready(function(){
+//     $("p").click(function(){
+//       $(this).hide();
+//     });
+//   });
+
+//An alternative 
+// $(function(){
+//     $("p").click(function(){
+//         $(this).hide(); // A click event that trigers the hide function .
+//     });
+// });
+
+// We can also have several events running one after the other using the 'on()' function
+// $("p").on({
+//     mouseenter: function(){
+//       $(this).css("background-color", "lightgray");
+//     },  
+//     mouseleave: function(){
+//       $(this).css("background-color", "lightblue");
+//     }, 
+//     click: function(){
+//       $(this).css("background-color", "yellow");
+//     }
+// }) 
+
+//7. Jquery Chaining.
+//~~~~~~~~~~~~~~~~~~~
+// $(function(){
+//     $("button").click(function(){
+//       $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+//     });
+//   });
+// 
+//JS EFFECTS.
+//~~~~~~~~~~~~
+// Demo of show and Hide.
+// $(function(){
+//     $("#determinant").click(function(){
+//         $('#unorderedList').hide(); // A click event that trigers the hide function .
+//     });
+//     $("#determinant2").click(function(){
+//         $('#unorderedList').show();
+//     });
+// });
+
+
+// Examples of other events include:
+// fade(), slide(), animate({}) etc.
+
+// NOTE: The above code can be solve with the toggle event handler.
+
+
+//8. JQUERY/HTML/DOM 
+//~~~~~~~~~~~~~~~~~~~
+$(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text()); // taking parag content into the alert msg
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html()); // taking html content of the parag into alert msg.
+  });
+});
+
+// we use the same methods to set content into html document.
+// we can also append content by use of the methods below.
+append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() - Inserts content before the selected elements
+
+//we can remove content as:
+remove() - Removes the selected element (and its child elements)
+empty() - Removes the child elements from the selected element
+
+//we can also set the width and the height.
+width() // just return the width
+inner/height() 
+
+// CONSUMING API 
+//~~~~~~~~~~~~~~
+
+// $(function(){
+//     $("#btn1").click(function(){
+//         $.ajax({
+//             url: "http://rest-service.guides.spring.io/greeting"
+//         }).then(function(data) {
+//            $('.greeting-id').append(data.id);
+//            $('.greeting-content').append(data.content);
+//         });
+//     });
+//   });
+  
+
+
+//Links to api
+//http://rest-service.guides.spring.io/greeting
+
