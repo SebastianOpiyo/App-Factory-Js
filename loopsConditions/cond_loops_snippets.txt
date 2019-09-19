@@ -1,0 +1,109 @@
+## CONDITIONS AND LOOPS : CONTROLLING PROGRAM FLOW.
+
+# The IF statement.
+~~~~~~~~~~~~~~~~~~~~~
+
+if (condition){
+ conditional code;
+}
+
+--> with conditional statements, the most useful types of expressions are those that
+use comparison operators to test a condition and return a boolean value as outcome.
+
+var age = 27
+
+if (age > 20)
+{
+  alert("Drink to get drunk");
+}
+
+--> > or < are useful with numbers but == is useful for both strings and No.s
+
+var name = "Maximus";
+
+if (name == "Maximus")
+{
+  alert("Me bad!");
+}
+
+--> NOTE: use of =/==/===
+
+--> logical operators (&& and ||) use to combine conditional tests.
+
+# The IF -ELSE statement
+~~~~~~~~~~~~~~~~~~~~~~~~
+if (condition)
+{
+  Do this;
+}
+else
+{
+  we do this if 'Do this was false';
+}
+
+# The ELSE - IF statement
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+if (condition)
+{
+  Do this;
+}
+else if (test another condition)
+{
+  we do this if 'Do this was false';
+}
+else
+{
+  we resort to this if everything fails;
+}
+
+--> the 'else' might not always be necessary.
+
+
+# LOOPS: MINIMIZING REPETITION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--> generally repeat a set of actions as long as specified condition(s) are true
+
+# the While loop
+while (condition)
+{
+  conditional code;
+}
+
+--> while loop terminates when the condition is false.
+--> Loops are handy when used with arrays.
+
+var numbers = [1,2,3,4,5];
+var incrementor = 0;
+while (incrementer < numbers.length)
+{
+  numbers[incrementer] *=2;
+  incrementer ++;
+}
+
+
+# DO-WHILE LOOPS
+~~~~~~~~~~~~~~~~~~
+--> are rarely used. But its just cool to know.
+--> they basically enable the code to run at least run once, even if the condition is false.
+
+// remember to set the counter first otherwise it will loop forever.
+do
+{
+conditional code;
+}
+while (condition);
+
+
+# FOR-LOOPS
+~~~~~~~~~~~
+// We ca reduce the for loop above with the following code:
+
+var numbers = [1,2,3,4,5];
+
+for (var i=0; i< numbers.length; i++)
+{
+  numbers[i] *=2;
+}
+
+--> for loop shortens the declaration of the counter var and increamenting of the variable

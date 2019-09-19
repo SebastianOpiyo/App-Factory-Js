@@ -1,4 +1,5 @@
  
+/*
 num1 = document.getElementById("num1");
 num2 = document.getElementById("num2");
 sumNum = document.getElementById("numSum")
@@ -11,4 +12,5 @@ function addNums() {
     var two = val2.value
     sumNum.innerHTML = one + two
 }
-       
+*/
+
