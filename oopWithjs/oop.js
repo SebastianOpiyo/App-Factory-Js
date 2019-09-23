@@ -13,12 +13,13 @@ function createNewPerson(name){
      return obj
 }
 
-const seba = createNewPerson('Sebastian')
+const seba = createNewPerson('Sebastian');
 // console.log(seba.name);
 // console.log(seba.greeting());
 
 
 // Alternatively we can employ the use of a constructor function that makes things quite neat.
+// we don't need to construct an object first here instead we employ the use of `this`
 function Person(name){
     this.name = name;
     this.greeting = name => 'My name is ' + this.name + '.';
