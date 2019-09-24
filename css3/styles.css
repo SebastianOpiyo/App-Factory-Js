@@ -1,0 +1,68 @@
+/* Defining a variable in the root ensures that it is accessible everywhere */
+:root {
+    --cssVariable-color: green;
+}
+
+/* MEDIA QUERIES */
+/* Media queries are used to change css vars depending on the size of the screen */
+/* we change the root var if the screen size has reached the max-width set */
+@media (max-width: 350px) {
+    :root {
+        --cssVariable-color: #ff00ff;
+    }
+}
+
+body{
+    background-color: azure;
+}
+
+/* CSS GRID */
+/* We set container css here */
+.container {
+    width: 100%;
+    grid-template-columns: auto;
+    /*display: grid*/
+    /* grid-template-rows: 60px 60px  60px; OR grid-template-columns: 1fr 1fr 1fr; OR auto */
+    grid-template-rows: auto; /* sets the size to auto*/
+    /* grid-template-rows: 1fr 100px 1fr; */ /* We use fractions here */
+    /* setting the gap */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/* Import font from other sites e.g google fonts */
+h1 {
+    font-family: Tangerine;
+    font-size: 70px;
+    color: var(--cssVariable-color, black);  /* We can add a fall back color here just incase */
+    background-color:orange;
+}
+
+h4 {
+    font-family: Droid+Sans;
+    font-size: 25px;
+}
+
+/* Padding is space around the text */
+/* margin is space around the padding */
+
+/* Important */
+/* It overides all other styline */
+
+.para{
+    color: purple !important; /* orange overides red, but with important property it overides evrything*/
+}
+
+.para2{
+    color: orange;
+    grid-area: content;
+}
+.aside {
+   color: var(--cssVariable-color); /* We can overide this var */ 
+}
+
+/* CSS VARIABLES */
+/* This are variables that we can use widely in the style sheet */
+/* Example */
+
+
