@@ -48,3 +48,8 @@ let sqlValue = db.transaction(function(tx){
 });
 
 //console.log(sqlValue); 
+
+// INDEXED DB
+// We have to open the db just incase it was closed or never existed.
+var request = indexedDB.open("library"); // we call it library.
+
